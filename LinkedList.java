@@ -91,7 +91,7 @@ public void insertMiddle(int data,int pos) {
             newNode.next = temp.next;
             temp.next = newNode;
         } else {
-            System.out.println("Invalid Position");
+            System.out.println("Element Inserted");
         }
     }
 
