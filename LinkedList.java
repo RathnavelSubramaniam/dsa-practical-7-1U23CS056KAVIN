@@ -72,10 +72,29 @@ public static void main(String[] args) {
            }
         }
     }
-public void insertMiddle() 
-    {    
-//TYPE YOUR CODE HERE
+public void insertMiddle(int data,int pos) {
+         Node newNode = new Node(data);
+
+        if (pos == 1) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+
+        Node temp = head;
+
+        for (int i = 1; i < pos - 1 && temp != null; i++) {
+            temp = temp.next;
+        }
+
+        if (temp != null) {
+            newNode.next = temp.next;
+            temp.next = newNode;
+        } else {
+            System.out.println("Invalid Position");
+        }
     }
+
 
 public void displayList() {
         Node current = head;
