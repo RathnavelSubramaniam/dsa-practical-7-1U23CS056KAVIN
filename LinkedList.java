@@ -89,9 +89,10 @@ public void insertMiddle(int data,int pos) {
 
         if (temp != null) {
             newNode.next = temp.next;
-            temp.next = newNode;
+             temp.next = newNode;
+             System.out.println("Position out of bounds");
         } else {
-            System.out.println("Element Inserted");
+            System.out.println("ELEMENT INSERTED");
         }
     }
 
