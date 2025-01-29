@@ -86,7 +86,7 @@ public void insertMiddle(int data,int pos) {
         }
      newNode.next = temp.next;
              temp.next = newNode;   }
-              System.out.println("Element Inserted");
+              System.out.println("ELEMENT INSERTED");
     }
 
 
